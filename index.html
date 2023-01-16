@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="header-text">Library</div>
+    </div>
+    <div class="body-container">
+        <button id="new-book">+ New Book</button>
+        <div id="books-container"></div>
+        <div class="modal" id="add-book-wrapper">
+            <div class="modal-content">
+                <form id="add-book-form">
+                    <h3>Add new book</h3>
+                    <div class="form-input">
+                        <input type="text" id="title" placeholder="Title">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" id="author" placeholder="Author">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" id="pages" placeholder="Total Pages">
+                    </div>
+                    <div class="form-input">
+                        <input type="text" id="read" placeholder="Completed Pages">
+                    </div>
+                    <div class="buttons-wrapper">
+                        <button id="book-submit">Submit</button>
+                        <button id="book-stop">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>   
+</html>
